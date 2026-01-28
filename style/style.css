@@ -1,0 +1,21 @@
+@import url(../style/search.css);
+@import url(../style/films.css);
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1000px;
+    padding: 100px;
+}
+
+section {
+    width: 100%;
+}
+
