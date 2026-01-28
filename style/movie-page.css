@@ -3,6 +3,8 @@ body {
 }
 
 .back-link {
+    display: block;
+    width: 400px;
     color: rgba(0, 0, 0, 1);
     font-family: inherit;
     font-style: Bold;
@@ -18,6 +20,37 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     margin-left: 174px;
     margin-top: 60px;
+}
+
+.film-page {
+    display: flex;
+    gap: 90px;
+    margin-top: 120px;
+}
+
+.film-page-poster {
+    width: 350px;
+    height: 452px;
+}
+
+.film-page-title {
+    margin-bottom: 33px;
+    font-style: Bold;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+}
+
+.film-info {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.film-info-response {
+    color: rgba(0, 148, 255, 1);
 }
