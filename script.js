@@ -9,7 +9,7 @@ searchBtnNode.addEventListener('click', () => {
         return;
     }
 
-    fetch(`http://www.omdbapi.com/?i=tt3896198&s=${userRequest}&apikey=c24b384d`)
+    fetch(`https://www.omdbapi.com/?i=tt3896198&s=${userRequest}&apikey=c24b384d`)
         .then(response => response.json())
         .then(json => {
             const films = json.Search;
