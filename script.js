@@ -18,7 +18,7 @@ searchBtnNode.addEventListener('click', () => {
             
             films.forEach(element => {
                 film += `
-                    <div class='film' onclick="location.href='/movie.html?id=${element.imdbID}';">
+                    <div class='film' onclick="location.href='movie.html?id=${element.imdbID}';">
                         <img class='film-poster' src='${element.Poster}'>
                         <div class='film-info'>
                             <h2 class='film-info-title'>${element.Title}</h2>
