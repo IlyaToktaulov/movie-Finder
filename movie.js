@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(location.search);
 const id = urlParams.get('id');
 
-fetch(`http://www.omdbapi.com/?i=${id}&apikey=c24b384d`)
+fetch(`https://www.omdbapi.com/?i=${id}&apikey=c24b384d`)
     .then(response => response.json())
     .then(json => {
         const filmInfo = `
