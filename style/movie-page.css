@@ -3,6 +3,8 @@ body {
 }
 
 .back-link {
+    display: block;
+    width: 400px;
     color: rgba(0, 0, 0, 1);
     font-family: inherit;
     font-style: Bold;
