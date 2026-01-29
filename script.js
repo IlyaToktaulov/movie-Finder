@@ -1,3 +1,6 @@
+const BASE_URL = 'https://www.omdbapi.com/';
+const API_KEY = 'apikey=c24b384d';
+
 const searchBtnNode = document.querySelector('.js-search-btn');
 const inputNode = document.querySelector('.js-input');
 
@@ -9,7 +12,7 @@ searchBtnNode.addEventListener('click', () => {
         return;
     }
 
-    fetch(`https://www.omdbapi.com/?i=tt3896198&s=${userRequest}&apikey=c24b384d`)
+    fetch(`${BASE_URL}?s=${userRequest}&${API_KEY}`)
         .then(response => response.json())
         .then(json => {
             const films = json.Search;
@@ -33,4 +36,4 @@ searchBtnNode.addEventListener('click', () => {
         })
 
     searchBtnNode.classList.toggle('active-btn');
-})
+});

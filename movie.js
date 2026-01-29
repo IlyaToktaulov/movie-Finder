@@ -1,7 +1,10 @@
+const BASE_URL = 'https://www.omdbapi.com/';
+const API_KEY = 'apikey=c24b384d';
+
 const urlParams = new URLSearchParams(location.search);
 const id = urlParams.get('id');
 
-fetch(`https://www.omdbapi.com/?i=${id}&apikey=c24b384d`)
+fetch(`${BASE_URL}?i=${id}&${API_KEY}`)
     .then(response => response.json())
     .then(json => {
         const filmInfo = `
